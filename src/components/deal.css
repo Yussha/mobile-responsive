@@ -125,8 +125,18 @@
   }
 }
 
-/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .dealBtn button {
-    width: 150px;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .deal {
+    width: 93%;
+    height: fit-content;
+    background-size: cover;
   }
-} */
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .deal {
+    width: 93%;
+    height: fit-content;
+    background-size: cover;
+  }
+}

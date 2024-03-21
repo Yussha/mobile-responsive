@@ -111,3 +111,33 @@
     font-size: 1rem;
   }
 }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .searBarContent {
+    width: 90%;
+    padding: 5px;
+  }
+
+  .searcResultCount {
+    font-size: 1rem;
+  }
+
+  .searchForSpan {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .searBarContent {
+    width: 90%;
+    padding: 5px;
+  }
+
+  .searcResultCount {
+    font-size: 1rem;
+  }
+
+  .searchForSpan {
+    font-size: 1rem;
+  }
+}

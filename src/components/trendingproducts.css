@@ -142,30 +142,38 @@
   }
 }
 
-/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .iconBtn {
     position: static;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     opacity: 1;
     visibility: visible;
     padding-bottom: 20px;
+  }
+
+  .tBtn-icon,
+  .quickViewBtn,
+  .wishListBtn {
+    font-size: 0.8rem;
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  .trendProduct {
-    padding: 0px 50px;
-  }
-
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .iconBtn {
     position: static;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     opacity: 1;
     visibility: visible;
     padding-bottom: 20px;
   }
-} */
+
+  .tBtn-icon,
+  .quickViewBtn,
+  .wishListBtn {
+    font-size: 0.8rem;
+  }
+}
