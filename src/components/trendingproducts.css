@@ -1,0 +1,171 @@
+.trendProduct {
+  font-family: sans-serif;
+  padding: 80px 0px;
+}
+
+.trendProducts-title {
+  color: #232f3e;
+  font-weight: 600;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.trendProducts-swiper {
+  width: 90%;
+  height: auto;
+}
+
+.customTrendProduct-swiperSlide {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.trendProductImg {
+  width: auto;
+  height: auto;
+}
+
+.trendProductImg img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.customTrendProduct-swiperSlide:hover .trendProductImg img {
+  transform: scale(1.1);
+}
+
+.Tproduct-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.trendProduct-name {
+  color: #6f6f6f;
+}
+
+.priceTrendProduct span {
+  color: #ff5049;
+  font-weight: 500;
+}
+
+.star-checked {
+  color: #fe9704;
+}
+
+.iconBtn {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  right: 10px;
+  top: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, right 0.3s ease;
+}
+
+.customTrendProduct-swiperSlide:hover .iconBtn {
+  opacity: 1;
+  visibility: visible;
+  right: 10%;
+}
+
+.tBtn-icon {
+  border: 1px solid #6f6f6f;
+  color: #6f6f6f;
+  padding: 8px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.tBtn-icon:hover {
+  border: #ff5049;
+  background-color: #ff5049;
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .trendProduct {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .trendProducts-swiper {
+    width: 100%;
+  }
+
+  .trendProducts-title {
+    font-size: 1.5rem;
+  }
+
+  .Tproduct-details {
+    margin-bottom: 0px;
+  }
+
+  .trendProduct-name {
+    font-size: 0.8rem;
+  }
+
+  .priceTrendProduct span {
+    font-size: 1rem;
+  }
+
+  .ratings span {
+    font-size: 0.9rem !important;
+  }
+
+  .iconBtn {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    opacity: 1;
+    visibility: visible;
+    padding-bottom: 20px;
+  }
+
+  .tBtn-icon,
+  .quickViewBtn,
+  .wishListBtn {
+    font-size: 0.8rem;
+  }
+}
+
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .iconBtn {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    opacity: 1;
+    visibility: visible;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .trendProduct {
+    padding: 0px 50px;
+  }
+
+  .iconBtn {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    opacity: 1;
+    visibility: visible;
+    padding-bottom: 20px;
+  }
+} */

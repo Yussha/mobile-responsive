@@ -1,0 +1,18 @@
+.specialNotes {
+  margin-top: 20px;
+}
+
+.specialNotes h1 {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.specialNotes textarea {
+  resize: none;
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  border-color: #d6cbcb;
+  border-radius: 5px;
+}

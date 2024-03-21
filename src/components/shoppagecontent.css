@@ -1,0 +1,99 @@
+.shopPageContent {
+  width: 100%;
+}
+
+.shopPageBanner {
+  object-fit: cover;
+  height: 230px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.shopContentHeader h2 {
+  font-size: 1rem;
+  color: #333333;
+  border-left: 2px solid #ff5049;
+  padding-left: 8px;
+  display: inline;
+}
+
+.shopContentHeader span {
+  color: #333333;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.sortingContiner {
+  display: flex;
+  padding-top: 20px;
+  border-bottom: 1px solid #d6cbcb;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+.sortingLayout {
+  color: #6f6f6f;
+  display: flex;
+  gap: 10px;
+}
+
+.sortingIcon {
+  cursor: pointer;
+}
+
+.dropdownSort {
+  position: relative;
+  width: 300px;
+}
+
+.dropDownSortShow {
+  display: flex;
+  gap: 10px;
+}
+
+.dropDownSortShow label {
+  color: #333333;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.displaySortType,
+.dropdownSortIcon {
+  color: #6f6f6f;
+}
+
+.dropSortbtn {
+  width: 232px;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.dropdownSort-content {
+  background-color: white;
+  box-shadow: 0 0 15px #00000026;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding-left: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  gap: 12px;
+  z-index: 999;
+}
+
+.dropdownSort-content span {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.dropdownSort-content span:hover {
+  background-color: #d6cbcb;
+}
+
+.dropdownSort:hover .dropdownSort-content {
+  display: flex;
+}

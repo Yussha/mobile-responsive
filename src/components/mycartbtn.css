@@ -1,0 +1,31 @@
+.myCartBtn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.myCartBtn button {
+  color: white;
+  background-color: #ff5049;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  height: 50px;
+  border: none;
+  box-shadow: 0 0 15px #00000026;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.myCartBtn button:hover {
+  background-color: #232f3e;
+}
+
+.myCartClearBtn {
+  width: 180px;
+}
+
+.myCartConShop {
+  width: 210px;
+}

@@ -1,0 +1,195 @@
+.contactPageContent {
+  margin: 80px 110px;
+  font-family: sans-serif;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contactInfo h1 {
+  color: #333333;
+  font-size: 1.8rem;
+  text-align: center;
+  border-bottom: 2px solid #333333;
+}
+
+.contactInfo p {
+  color: #6f6f6f;
+  line-height: 25px;
+  margin-top: 22px;
+  text-align: center;
+  width: 420px;
+}
+
+.contactInfoGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.contactInfoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: white;
+  height: 220px;
+  width: 500px;
+}
+
+.contactIcon {
+  background-color: #333333;
+  color: white;
+  border-radius: 50%;
+  font-size: 2.3rem;
+  padding: 8%;
+  margin-bottom: 10px;
+}
+
+.contactInfoCard span {
+  color: #6f6f6f;
+  padding-top: 10px;
+}
+
+.contactMapContainer {
+  margin-top: 80px;
+}
+
+.contactPageLine {
+  margin: 80px 0px;
+}
+
+.contactInputsTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contactInputsTitle h1 {
+  color: #333333;
+  font-size: 1.8rem;
+  text-align: center;
+  border-bottom: 2px solid #333333;
+}
+
+.contactInputsTitle p {
+  color: #6f6f6f;
+  line-height: 25px;
+  margin-top: 22px;
+  text-align: center;
+  width: 420px;
+}
+
+.fomrInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputNameAndEmail {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.inputNameAndEmail div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputNameAndEmail div label {
+  color: #333333;
+  font-size: 1rem;
+}
+
+.inputNameAndEmail div input {
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  width: 290px;
+  height: 40px;
+  border: 1px solid #d6cbcb;
+}
+
+.phoneNumber {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+
+.phoneNumber label {
+  color: #333333;
+  font-size: 1rem;
+}
+
+.phoneNumber input {
+  width: 600px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  height: 40px;
+  border: 1px solid #d6cbcb;
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 25px;
+  width: 600px;
+}
+
+.textArea label {
+  color: #333333;
+  font-size: 1rem;
+}
+
+.textArea textarea {
+  font-family: sans-serif;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 8px 10px;
+  height: 200px;
+  border: 1px solid #d6cbcb;
+  resize: none;
+  width: 100%;
+}
+
+.formButton {
+  width: 53%;
+  display: flex;
+  height: fit-content;
+}
+
+.formButton button {
+  color: white;
+  font-weight: bold;
+  background-color: #232f3e;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 120px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00000026;
+  transition: 0.5s ease-in-out;
+}
+
+.formButton button:hover {
+  background-color: #ff5049;
+}

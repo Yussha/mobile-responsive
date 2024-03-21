@@ -1,0 +1,15 @@
+.opreviews {
+  padding-top: 30px;
+  color: rgb(111, 111, 111);
+  font-size: 0.9rem;
+}
+
+.opreviews h2 {
+  color: #232f3e;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.opreviews span {
+  font-size: 1rem;
+}

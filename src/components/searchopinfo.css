@@ -1,0 +1,27 @@
+.searhOPinfo {
+  padding: 80px 110px;
+}
+
+.searhOPinfo-btnContainer {
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid #d6cbcb;
+  padding-bottom: 12px;
+}
+
+.searhOPinfo-btnContainer button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(111, 111, 111);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.searhOPinfo-btnContainer button .active {
+  color: #232f3e;
+}
+
+.searhOPinfo-btnContainer button:hover {
+  color: #232f3e;
+}

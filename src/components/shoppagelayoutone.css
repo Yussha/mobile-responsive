@@ -1,0 +1,89 @@
+.shopPage-swiper {
+  margin-top: 20px;
+  width: 880px;
+  height: auto;
+}
+.custompShop-swiperSlide {
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* .custom-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+} */
+
+.shopItemImg img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.custompShop-swiperSlide:hover .shopItemImg img {
+  transform: scale(1.1);
+}
+
+.shopItem-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.shopItem-name {
+  color: #6f6f6f;
+}
+
+.priceShopItem span {
+  color: #ff5049;
+  font-weight: 500;
+}
+
+.shopItemStar-checked {
+  color: #fe9704;
+}
+
+.shopItemIconBtn {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  right: 10px;
+  top: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, right 0.3s ease;
+}
+
+.custompShop-swiperSlide:hover .shopItemIconBtn {
+  opacity: 1;
+  visibility: visible;
+  right: 10%;
+}
+
+.ShopItemBtn-icon {
+  border: 1px solid #6f6f6f;
+  color: #6f6f6f;
+  padding: 8px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.ShopItemBtn-icon:hover {
+  border: #ff5049;
+  background-color: #ff5049;
+  color: #fff;
+}
