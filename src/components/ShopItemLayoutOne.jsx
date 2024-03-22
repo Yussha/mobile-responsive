@@ -63,7 +63,7 @@ export default function ShopItemLayoutOne({
         spaceBetween={10}
         breakpoints={{
           "@0.00": {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
           "@0.75": {
@@ -125,11 +125,13 @@ export default function ShopItemLayoutOne({
               </div>
 
               <div className="shopItemIconBtn">
-                <FontAwesomeIcon
-                  icon={faBagShopping}
-                  className="ShopItemBtn-icon"
-                  onClick={() => addToCart(product.id)}
-                />
+                <button className="ShopItemBtn-icon">
+                  <FontAwesomeIcon
+                    icon={faBagShopping}
+                    onClick={() => addToCart(product.id)}
+                  />
+                </button>
+
                 <QuickViewBtn
                   product={product}
                   setModal={setModal}

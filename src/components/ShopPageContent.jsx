@@ -5,6 +5,7 @@ import {
   faTableCells,
   faList,
   faChevronDown,
+  faFilter,
 } from "@fortawesome/free-solid-svg-icons";
 
 import shopPageBanner from "./image/big-image-5.jpg";
@@ -22,6 +23,8 @@ export default function ShopPageContent({
   setShowModal,
   setWishlistItem,
   wishlistItem,
+  setShowFilter,
+  showFilter,
 }) {
   const [layout, setLayout] = useState("defaultLayout");
   const sortContent = [
@@ -73,6 +76,12 @@ export default function ShopPageContent({
 
       <div className="sortingContiner">
         <div className="sortingLayout">
+          <div className="filterIconContainer">
+            <div onClick={() => setShowFilter(true)}>
+              <FontAwesomeIcon icon={faFilter} />
+              <span>Filter</span>
+            </div>
+          </div>
           <FontAwesomeIcon
             className="sortingIcon"
             style={

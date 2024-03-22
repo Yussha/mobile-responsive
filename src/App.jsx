@@ -27,6 +27,8 @@ function App() {
   }));
   // for responsive navbar
   const [showNavLink, setShowNavLink] = useState(false);
+  const [showFilter, setShowFilter] = useState(false);
+
   const [showSideCart, setShowSideCart] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [showSearchBar, setShowSearchBar] = useState(false);
@@ -169,6 +171,8 @@ function App() {
             element={
               <ScrollToTopOnNavigate>
                 <ShopPage
+                  showFilter={showFilter}
+                  setShowFilter={setShowFilter}
                   updatedData={updatedData}
                   setCartItems={setCartItems}
                   cartItems={cartItems}

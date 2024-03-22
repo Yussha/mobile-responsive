@@ -1,6 +1,8 @@
 import "./shoppagefilter.css";
 
-import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
 export default function ShopPageFilter({
   updatedData,
   handleNewProduct,
@@ -11,6 +13,8 @@ export default function ShopPageFilter({
   handleResetAll,
   handleResetCategory,
   handleResetNewAndBest,
+  setShowFilter,
+  showFilter,
 }) {
   // Remove the duplicate category
   const uniqueCategory = updatedData.filter((value, index, array) => {
@@ -44,11 +48,18 @@ export default function ShopPageFilter({
   }, 0);
 
   return (
-    <section className="shopPageFilter">
+    <section className={"shopPageFilter" + (showFilter ? "active" : "")}>
       <div className="shopPageFilterItem">
         <div className="shopFilterHeader">
           <h2>Filter</h2>
-          <button onClick={handleResetAll}>Reset</button>
+          <button className="hideFilterReset" onClick={handleResetAll}>
+            Reset
+          </button>
+          <FontAwesomeIcon
+            icon={faXmark}
+            className="filterXmark"
+            onClick={() => setShowFilter(false)}
+          />
         </div>
 
         {isFiltered ? (

@@ -14,6 +14,8 @@ export default function ShopPage({
   setShowModal,
   setWishlistItem,
   wishlistItem,
+  setShowFilter,
+  showFilter,
 }) {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [isFiltered, setIsFiltered] = useState(false);
@@ -120,6 +122,8 @@ export default function ShopPage({
       <ShopPageNav />
       <div className="shopPageItem">
         <ShopPageFilter
+          showFilter={showFilter}
+          setShowFilter={setShowFilter}
           updatedData={updatedData}
           handleNewProduct={handleNewProduct}
           handleBestProduct={handleBestProduct}
@@ -132,6 +136,8 @@ export default function ShopPage({
           handleResetNewAndBest={handleResetNewAndBest}
         />
         <ShopPageContent
+          showFilter={showFilter}
+          setShowFilter={setShowFilter}
           updatedData={updatedData}
           filteredProducts={filteredProducts}
           setFilteredProducts={setFilteredProducts}
