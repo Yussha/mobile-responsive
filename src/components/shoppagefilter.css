@@ -63,13 +63,13 @@
     padding: 20px;
   }
 
-  .shopPageFilter.active {
+  /* .shopPageFilter.active {
     left: 0;
-  }
+  } */
 
-  .shopPageFilter.close {
+  /* .shopPageFilter.close {
     left: -300px;
-  }
+  } */
 
   .hideFilterReset {
     display: none;

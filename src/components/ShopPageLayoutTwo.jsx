@@ -65,7 +65,7 @@ export default function ShopPageLayoutTwo({
             </div>
             <div className="customLayoutInfo">
               <h3>{product.name}</h3>
-              <span>{product.price}</span>
+              <span className="customLayoutPrice">{product.price}</span>
               <div className="customLayoutRatings">
                 <span>
                   <FontAwesomeIcon

@@ -69,3 +69,57 @@
   background-color: #ff5049;
   color: #fff;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .customLayout {
+    width: 100%;
+  }
+
+  .customLayoutContent {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .customLayoutImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .customLayoutImg img {
+    width: 100%;
+    object-fit: cover;
+    height: 330px;
+  }
+
+  .customLayoutInfo h3 {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .customLayoutPrice {
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+  }
+
+  .customLayoutRatings {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .customLayoutInfo p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .customLayoutIcons {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .customLayoutIcon {
+    font-size: 0.8rem;
+  }
+}
