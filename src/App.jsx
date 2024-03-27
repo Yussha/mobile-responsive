@@ -212,6 +212,7 @@ function App() {
           showSearchBar={showSearchBar}
           showModal={showModal}
           setShowModal={setShowModal}
+          showFilter={showFilter}
         />
       </main>
     </>

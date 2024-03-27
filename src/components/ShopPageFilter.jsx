@@ -48,7 +48,10 @@ export default function ShopPageFilter({
   }, 0);
 
   return (
-    <section className={"shopPageFilter" + (showFilter ? "active" : "")}>
+    <section
+      className="shopPageFilter"
+      style={showFilter ? { left: "0px" } : { left: "-330px" }}
+    >
       <div className="shopPageFilterItem">
         <div className="shopFilterHeader">
           <h2>Filter</h2>

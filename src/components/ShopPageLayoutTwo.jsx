@@ -1,10 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faStar,
-  faBagShopping,
-  faHeart,
-  faEye,
-} from "@fortawesome/free-solid-svg-icons";
+import { faStar, faBagShopping } from "@fortawesome/free-solid-svg-icons";
 
 import "./shoppagelayouttwo.css";
 

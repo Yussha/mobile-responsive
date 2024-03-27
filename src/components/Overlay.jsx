@@ -4,12 +4,13 @@ export default function Overlay({
   showSearchBar,
   showModal,
   setShowModal,
+  showFilter,
 }) {
   return (
     <div
       onClick={() => setShowModal(false)}
       className={
-        showSideCart || showSearchBar || showModal
+        showSideCart || showSearchBar || showModal || showFilter
           ? "overlay active"
           : "overlay"
       }

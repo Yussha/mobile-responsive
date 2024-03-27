@@ -77,9 +77,12 @@ export default function ShopPageContent({
       <div className="sortingContiner">
         <div className="sortingLayout">
           <div className="filterIconContainer">
-            <div onClick={() => setShowFilter(true)}>
+            <div
+              className="filterIconTextContainer"
+              onClick={() => setShowFilter(true)}
+            >
               <FontAwesomeIcon icon={faFilter} />
-              <span>Filter</span>
+              <span className="filterWord">Filter</span>
             </div>
           </div>
           <FontAwesomeIcon

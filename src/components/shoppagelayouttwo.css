@@ -123,3 +123,26 @@
     font-size: 0.8rem;
   }
 }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .customLayout {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .customLayout {
+    width: 100%;
+  }
+
+  .customLayoutImg {
+    width: auto;
+    height: auto;
+  }
+
+  .customLayoutImg img {
+    height: 405px;
+    width: 330px;
+    border-radius: 8px;
+  }
+}

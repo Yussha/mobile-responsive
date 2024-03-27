@@ -57,19 +57,12 @@
     position: fixed;
     background-color: white;
     top: 0;
-    z-index: 999;
-    left: -300px;
+    z-index: 1000;
+    left: 0px;
     height: 100vh;
     padding: 20px;
+    transition: 0.5s ease-in-out;
   }
-
-  /* .shopPageFilter.active {
-    left: 0;
-  } */
-
-  /* .shopPageFilter.close {
-    left: -300px;
-  } */
 
   .hideFilterReset {
     display: none;
@@ -81,5 +74,36 @@
 
   .shopPageFilterItem span {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .shopPageFilter {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 1000;
+    left: 0px;
+    height: 100vh;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .hideFilterReset {
+    display: none;
+  }
+
+  .filterXmark {
+    font-size: 1.5rem;
+  }
+
+  .shopPageFilterItem span {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .filterXmark {
+    display: none;
   }
 }
