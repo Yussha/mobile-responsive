@@ -87,7 +87,7 @@
   width: 420px;
 }
 
-.fomrInputs {
+.formInputs {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,4 +192,164 @@
 
 .formButton button:hover {
   background-color: #ff5049;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .contactPageContent {
+    margin: 80px 20px;
+  }
+  .contactInfo p {
+    font-size: 0.9rem;
+    width: 330px;
+  }
+
+  .contactInfoGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contactInfoCard {
+    width: 100%;
+  }
+
+  .contactMapContainer {
+    height: auto;
+  }
+
+  .map {
+    height: 300px;
+  }
+
+  .contactPageLine {
+    margin: 60px 0px;
+  }
+
+  .contactInputsTitle p {
+    font-size: 0.9rem;
+    width: 330px;
+  }
+
+  .formInputs {
+    width: 100%;
+  }
+
+  .inputNameAndEmail {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inputNameAndEmail div {
+    width: 100%;
+  }
+
+  .inputNameAndEmail div input {
+    width: 97%;
+    margin-left: 10px;
+  }
+
+  .phoneNumber {
+    width: 100%;
+  }
+
+  .phoneNumber input {
+    width: 97%;
+    margin-left: 10px;
+  }
+
+  .textArea {
+    width: 100%;
+  }
+
+  .textArea textarea {
+    width: 97%;
+    margin-left: 10px;
+  }
+
+  .formButton {
+    width: 100%;
+  }
+
+  .formButton button {
+    height: 45px;
+    width: 130px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .contactPageContent {
+    margin: 80px 20px;
+  }
+
+  .formInputs {
+    align-items: start;
+  }
+
+  .inputNameAndEmail {
+    gap: 28px;
+  }
+
+  .inputNameAndEmail div {
+    width: fit-content;
+  }
+
+  .inputNameAndEmail div input {
+    width: 350px;
+  }
+
+  .phoneNumber input {
+    width: 728px;
+  }
+
+  .textArea textarea {
+    width: 728px;
+  }
+
+  .formButton {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .contactPageContent {
+    margin: 80px 40px;
+  }
+
+  .formInputs {
+    align-items: start;
+  }
+
+  .inputNameAndEmail {
+    gap: 28px;
+    width: 100%;
+  }
+
+  .inputNameAndEmail div {
+    width: 100%;
+  }
+
+  .inputNameAndEmail div input {
+    width: 100%;
+  }
+
+  .phoneNumber {
+    width: 100%;
+  }
+
+  .phoneNumber input {
+    width: 100%;
+  }
+
+  .textArea {
+    width: 100%;
+  }
+
+  .textArea textarea {
+    width: 100%;
+  }
+
+  .formButton {
+    width: 100%;
+  }
 }

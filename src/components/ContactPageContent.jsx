@@ -59,7 +59,7 @@ export default function ContactPageContent() {
           </p>
         </div>
 
-        <form className="fomrInputs">
+        <form className="formInputs">
           <div className="inputNameAndEmail">
             <div>
               <label htmlFor="">Name</label>
