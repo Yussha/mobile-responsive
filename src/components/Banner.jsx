@@ -10,17 +10,23 @@ export default function Banner() {
       <div className="banner1st">
         <div className="banner-content content1st">
           <h1 className="bannerTitle">Wireless earbuds</h1>
-          <Link className="bannerLink">SHOP NOW</Link>
+          <Link to="shopPage" className="bannerLink">
+            SHOP NOW
+          </Link>
         </div>
         <div className="banner-content content2nd">
           {" "}
           <h1 className="bannerTitle">Smart Phones</h1>
-          <Link className="bannerLink">SHOP NOW</Link>
+          <Link to="shopPage" className="bannerLink">
+            SHOP NOW
+          </Link>
         </div>
         <div className="banner-content content3rd">
           {" "}
           <h1 className="bannerTitle">DSLR camera</h1>
-          <Link className="bannerLink">SHOP NOW</Link>
+          <Link to="shopPage" className="bannerLink">
+            SHOP NOW
+          </Link>
         </div>
       </div>
       <div className="banner2nd">
@@ -33,7 +39,9 @@ export default function Banner() {
         <div className="banner2nd-title">
           <h1>Best video quality ever</h1>
           <div className="banner2nd-btn">
-            <button>SHOP NOW</button>
+            <Link to="shopPage">
+              <button>SHOP NOW</button>
+            </Link>
           </div>
         </div>
       </div>

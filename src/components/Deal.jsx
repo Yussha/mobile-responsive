@@ -2,6 +2,8 @@ import "./deal.css";
 
 import { useState, useEffect } from "react";
 
+import { Link } from "react-router-dom";
+
 export default function Deal() {
   //TODO: CREATE A COUNTDOWN FUNCTION FOR DISCOUNTD DAY
 
@@ -56,7 +58,9 @@ export default function Deal() {
           </div>
         </div>
         <div className="dealBtn">
-          <button>SHOP NOW</button>
+          <Link to="shopPage">
+            <button>SHOP NOW</button>
+          </Link>
         </div>
       </div>
     </section>

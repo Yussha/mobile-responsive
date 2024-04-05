@@ -28,3 +28,9 @@
   color: #232f3e;
   text-decoration: underline;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .emptyWishlistPara {
+    width: 100%;
+  }
+}

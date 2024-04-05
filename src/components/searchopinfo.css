@@ -25,3 +25,21 @@
 .searhOPinfo-btnContainer button:hover {
   color: #232f3e;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .searhOPinfo {
+    padding: 80px 10px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .searhOPinfo {
+    padding: 70px 40px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .searhOPinfo {
+    padding: 0px 70px;
+  }
+}

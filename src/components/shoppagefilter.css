@@ -52,6 +52,10 @@
   padding-left: 10px;
 }
 
+.filterXmark {
+  display: none;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .shopPageFilter {
     position: fixed;
@@ -69,6 +73,7 @@
   }
 
   .filterXmark {
+    display: block;
     font-size: 1.5rem;
   }
 
@@ -94,6 +99,7 @@
   }
 
   .filterXmark {
+    display: block;
     font-size: 1.5rem;
   }
 

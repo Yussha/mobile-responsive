@@ -10,6 +10,10 @@ export default function CartPage({
   updatedData,
   countItemCart,
   total,
+  wishlistItem,
+  setWishlistItem,
+  setModal,
+  setShowModal,
 }) {
   return (
     <section className="cartPage">
@@ -20,7 +24,15 @@ export default function CartPage({
         total={total}
         setCartItems={setCartItems}
       />
-      <CartFeatured cartItems={cartItems} updatedData={updatedData} />
+      <CartFeatured
+        cartItems={cartItems}
+        setCartItems={setCartItems}
+        updatedData={updatedData}
+        wishlistItem={wishlistItem}
+        setWishlistItem={setWishlistItem}
+        setModal={setModal}
+        setShowModal={setShowModal}
+      />
     </section>
   );
 }

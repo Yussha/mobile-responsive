@@ -6,7 +6,15 @@ import { Autoplay } from "swiper/modules";
 
 import FeaturedCollectionList from "./FeaturedCollectionList";
 
-export default function CartFeatured({ updatedData }) {
+export default function CartFeatured({
+  updatedData,
+  wishlistItem,
+  setWishlistItem,
+  setModal,
+  setShowModal,
+  cartItems,
+  setCartItems,
+}) {
   const featuredProduct = updatedData.filter(
     (data) => data.featureProduct === true
   );
@@ -20,7 +28,7 @@ export default function CartFeatured({ updatedData }) {
           spaceBetween={10}
           breakpoints={{
             "@0.00": {
-              slidesPerView: 1,
+              slidesPerView: 2,
               spaceBetween: 10,
             },
             "@0.75": {
@@ -28,7 +36,7 @@ export default function CartFeatured({ updatedData }) {
               spaceBetween: 20,
             },
             "@1.00": {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 40,
             },
             "@1.50": {
@@ -51,6 +59,13 @@ export default function CartFeatured({ updatedData }) {
               >
                 <FeaturedCollectionList
                   featuredcollection={featuredcollection}
+                  wishlistItem={wishlistItem}
+                  setWishlistItem={setWishlistItem}
+                  setModal={setModal}
+                  setShowModal={setShowModal}
+                  cartItems={cartItems}
+                  setCartItems={setCartItems}
+                  updatedData={updatedData}
                 />
               </SwiperSlide>
             );

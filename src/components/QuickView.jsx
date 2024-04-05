@@ -1,7 +1,7 @@
 import "./quickview.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 import Wishlistbtn from "./Wishlistbtn";
 
@@ -14,6 +14,7 @@ export default function QuickView({
   updatedData,
   setWishlistItem,
   wishlistItem,
+  setShowModal,
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const [showSpan, setShowSpan] = useState(true);
@@ -91,7 +92,14 @@ export default function QuickView({
   }
   return (
     <section className="quickView">
-      <h1>Quickview</h1>
+      <div className="quickViewHeader">
+        <h1>Quickview</h1>
+        <FontAwesomeIcon
+          icon={faXmark}
+          className="quickViewXicon"
+          onClick={() => setShowModal(false)}
+        />
+      </div>
 
       <div className="quickView-content">
         <div className="imgContainer-quickView">

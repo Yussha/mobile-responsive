@@ -35,3 +35,35 @@
   color: #232f3e;
   text-decoration: underline;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .cartPageContent {
+    padding: 80px 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .emptyCartPara {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .cartPageContent {
+    padding: 80px 40px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .cartPageContent {
+    padding: 80px 40px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+}

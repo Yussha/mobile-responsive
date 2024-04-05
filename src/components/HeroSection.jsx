@@ -7,6 +7,8 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation, Autoplay } from "swiper/modules";
 import "./herosection.css";
+
+import { Link } from "react-router-dom";
 export default function HeroSection() {
   return (
     <section className="hero">
@@ -44,7 +46,9 @@ export default function HeroSection() {
             <h1>Best tablet smart pad</h1>
           </div>
           <div className="heroBtn-container">
-            <button>SHOW NOW</button>
+            <Link to="shopPage">
+              <button>SHOW NOW</button>
+            </Link>
           </div>
         </SwiperSlide>
       </Swiper>

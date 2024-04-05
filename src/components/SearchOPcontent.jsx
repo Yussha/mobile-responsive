@@ -148,7 +148,7 @@ export default function SearhopContent({
             >
               ADD TO CART
             </button>
-            <button className="opButNow">BUY NOW</button>
+            <button className="opBuyNow">BUY NOW</button>
           </div>
 
           <div className="oneProductWishlistBtn">

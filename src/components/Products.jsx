@@ -5,6 +5,8 @@ import "swiper/css";
 
 import ProductList from "./ProductList";
 import { useState } from "react";
+
+import { Link } from "react-router-dom";
 export default function Products({
   updatedData,
   cartItems,
@@ -115,7 +117,9 @@ export default function Products({
           })}
         </Swiper>
         <div className="seeMore-btn">
-          <button>SEE MORE</button>
+          <Link to="shopPage">
+            <button>SEE MORE</button>
+          </Link>
         </div>
       </div>
     </section>

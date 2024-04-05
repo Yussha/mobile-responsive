@@ -17,6 +17,8 @@ export default function SearchPage({
   showSpecificProduct,
   isClickedIndiItem,
   setShowSpecificProduct,
+  setModal,
+  setShowModal,
 }) {
   return (
     <section className="searchPage">
@@ -39,15 +41,15 @@ export default function SearchPage({
             Your search for "{searchQuery}" revealed the following:
           </h1>
           <Swiper
-            slidesPerView={1}
+            slidesPerView={3}
             spaceBetween={50}
             breakpoints={{
               "@0.00": {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 10,
               },
               "@0.75": {
-                slidesPerView: 2,
+                slidesPerView: 4,
                 spaceBetween: 20,
               },
               "@1.00": {
@@ -62,7 +64,7 @@ export default function SearchPage({
             modules={[]}
             className="mySwiper sDisplayProducts-swiper"
             wrapperTag="div"
-            wrapperClass="custom-wrapper"
+            wrapperClass="custom-wrapperSearhPage"
             allowTouchMove={false}
           >
             {searchDisplayItem.map((displayProduct) => {
@@ -71,7 +73,16 @@ export default function SearchPage({
                   className="customSdisplayProduct-swiperSlide"
                   key={displayProduct.id}
                 >
-                  <SearchPageList displayProduct={displayProduct} />
+                  <SearchPageList
+                    displayProduct={displayProduct}
+                    setModal={setModal}
+                    setShowModal={setShowModal}
+                    updatedData={updatedData}
+                    setWishlistItem={setWishlistItem}
+                    wishlistItem={wishlistItem}
+                    setCartItems={setCartItems}
+                    cartItems={cartItems}
+                  />
                 </SwiperSlide>
               );
             })}

@@ -26,3 +26,19 @@
     padding-left: 10px;
   }
 }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .contactPageNav {
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 75px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .contactPageNav {
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 75px;
+  }
+}

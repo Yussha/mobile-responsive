@@ -14,7 +14,7 @@ export default function Testimonial() {
 
   useEffect(() => {
     const handleResize = () => {
-      setSlidesPerView(window.innerWidth > 1024 ? 2 : 1);
+      setSlidesPerView(window.innerWidth > 1025 ? 2 : 1);
     };
 
     window.addEventListener("resize", handleResize);

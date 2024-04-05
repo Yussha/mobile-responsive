@@ -102,8 +102,9 @@ function App() {
                   updatedData={updatedData}
                   setWishlistItem={setWishlistItem}
                   wishlistItem={wishlistItem}
-                  setModal={setModal}
+                  showModal={showModal}
                   setShowModal={setShowModal}
+                  setModal={setModal}
                 />
               </ScrollToTopOnNavigate>
             }
@@ -118,6 +119,10 @@ function App() {
                   updatedData={updatedData}
                   countItemCart={countItemCart}
                   total={total}
+                  wishlistItem={wishlistItem}
+                  setWishlistItem={setWishlistItem}
+                  setModal={setModal}
+                  setShowModal={setShowModal}
                 />
               </ScrollToTopOnNavigate>
             }
@@ -139,6 +144,8 @@ function App() {
                   setShowSpecificProduct={setShowSpecificProduct}
                   showSpecificProduct={showSpecificProduct}
                   isClickedIndiItem={isClickedIndiItem}
+                  setModal={setModal}
+                  setShowModal={setShowModal}
                 />
               </ScrollToTopOnNavigate>
             }
@@ -203,6 +210,7 @@ function App() {
             updatedData={updatedData}
             setWishlistItem={setWishlistItem}
             wishlistItem={wishlistItem}
+            setShowModal={setShowModal}
           />
         )}
         <NewsLetter />
