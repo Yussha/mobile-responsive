@@ -1,0 +1,120 @@
+.myCartHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.myCartHeader h1 {
+  font-size: 18px;
+  font-style: normal;
+  color: #333333;
+  font-weight: 600;
+}
+
+.myCartHeader span {
+  color: #6f6f6f;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+}
+
+.cartInfos {
+  display: flex;
+  border: 1px solid #d6cbcb;
+  border-left: none;
+  border-right: none;
+  padding: 30px 0px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.itemInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.itemInfo img {
+  width: 100px;
+  height: 95px;
+  object-fit: cover;
+}
+
+.itemTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.cpItemName {
+  color: #333333;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cpItemName:hover {
+  color: #6f6f6f;
+}
+
+.cpItemColor,
+.cpPrice {
+  color: #333333;
+}
+
+.cpItemColor span {
+  font-weight: 600;
+}
+
+.itemQty {
+  display: flex;
+  flex-direction: column;
+}
+
+.productQty {
+  display: flex;
+}
+
+.productQty input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #6f6f6f;
+  border-radius: 5px;
+  color: #6f6f6f;
+  outline: none;
+}
+
+.changeQtyBtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.changeQtyBtn button {
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #6f6f6f;
+  width: 25px;
+  cursor: pointer;
+}
+
+.itemRemoveBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.itemRemoveBtn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ff5049;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.itemPrice {
+  font-weight: 600;
+  color: #333333;
+  font-size: 0.9rem;
+}

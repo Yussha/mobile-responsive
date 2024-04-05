@@ -1,0 +1,37 @@
+.cartPageContent {
+  padding: 80px 110px;
+  font-family: sans-serif;
+  display: flex;
+  gap: 20px;
+}
+
+.emptyCart {
+  font-family: sans-serif;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #232f3e;
+}
+
+.emptyCartTitle {
+  font-size: 3.8rem;
+  font-weight: 500;
+}
+
+.emptyCartPara {
+  font-weight: 600;
+  text-align: center;
+  width: 580px;
+  margin: 20px 0px;
+}
+
+.emptyCartLink {
+  color: #6f6f6f;
+}
+
+.emptyCartBtn {
+  color: #232f3e;
+  text-decoration: underline;
+}

@@ -1,0 +1,136 @@
+.oneProductContent {
+  display: flex;
+  gap: 110px;
+  padding: 0px 110px;
+  padding-top: 80px;
+}
+
+.oneProductImg {
+  height: auto;
+  width: auto;
+  border: 1px solid #d6cbcb;
+  border-radius: 5px;
+}
+
+.oneProductImg img {
+  height: 500px;
+  object-fit: contain;
+}
+
+.oneProductInfoCon {
+  width: 100%;
+}
+
+.ratings {
+  margin-bottom: 30px;
+}
+
+.opNamePrice {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.oneProductName {
+  font-size: 2.5rem;
+  color: #232f3e;
+}
+
+.oneProductPrice {
+  font-weight: bold;
+  color: #ff5049;
+  font-size: 1.1rem;
+}
+
+.opitemQty {
+  display: flex;
+  flex-direction: column;
+}
+
+.OneProductQty {
+  display: flex;
+}
+
+.OneProductQty span {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #232f3e;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.OneProductQty input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #6f6f6f;
+  border-radius: 5px;
+  color: #6f6f6f;
+  outline: none;
+}
+
+.opChangeQtyBtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.opChangeQtyBtn button {
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #6f6f6f;
+  width: 25px;
+  cursor: pointer;
+}
+
+.oneProductBtn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 30px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.opAddToCart {
+  padding: 10px;
+  width: 190px;
+  height: 50px;
+  color: #232f3e;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid #232f3e;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.opAddToCart:hover {
+  background-color: #232f3e;
+  color: white;
+}
+
+.opButNow {
+  color: white;
+  padding: 10px;
+  width: 190px;
+  height: 50px;
+  background-color: #232f3e;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.opButNow:hover {
+  background-color: #ff5049;
+}
+
+.oneProductWishlistBtn {
+  cursor: pointer;
+  color: #6f6f6f;
+  width: fit-content;
+  transition: 0.3s ease-in-out;
+}

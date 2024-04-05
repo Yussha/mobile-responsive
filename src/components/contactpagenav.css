@@ -1,0 +1,28 @@
+.contactPageNav {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #d6cbcb;
+  border-left: none;
+  border-right: none;
+  padding: 10px 0px;
+  padding-left: 110px;
+  font-family: sans-serif;
+  gap: 5px;
+  color: #6f6f6f;
+  font-size: 0.9rem;
+}
+
+.contactPageNav-link {
+  color: #6f6f6f;
+}
+
+.contactPageNav-link:hover {
+  color: black;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .contactPageNav {
+    width: 100%;
+    padding-left: 10px;
+  }
+}
